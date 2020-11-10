@@ -20,6 +20,27 @@ export default ({ route, navigation }) => {
                 placeholder="E-mail: email@email.com"
                 value={user.email}
             />
+            <Text>Telefone</Text>
+            <TextInput
+                style={style.input}
+                onChangeText={telefone => setUser({...user, telefone})}
+                placeholder="Telefone: (XX) 99999-9999"
+                value={user.telefone}
+            />
+            <Text>Cidade</Text>
+            <TextInput
+                style={style.input}
+                onChangeText={cidade => setUser({...user, cidade})}
+                placeholder="Cidade: Salvador"
+                value={user.cidade}
+            />
+            <Text>Estado</Text>
+            <TextInput
+                style={style.input}
+                onChangeText={estado => setUser({...user, estado})}
+                placeholder="Estado: Bahia"
+                value={user.estado}
+            />
             <Text>Avatar (URL)</Text>
             <TextInput
                 style={style.input}
