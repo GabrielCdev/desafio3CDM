@@ -3,6 +3,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import UserList from './src/views/UserList';
 import UserForm from './src/views/UserForm';
+import Home from './src/views/Marvel/Home';
+import Description from './src/views/Marvel/Description';
 import { Button, Icon } from 'react-native-elements';
 import { UsersProvider } from './src/context/UsersContext';
 
@@ -15,6 +17,8 @@ export default props => {
           <Drawer.Navigator
             initialRouteName="UserList"
             screenOptions={screenOptions}>
+              <Drawer.Screen name="Heroes" component={Home} />
+              <Drawer.Screen name="Description" component={Description} />
               <Drawer.Screen 
                 name="UserList" 
                 component={UserList}
