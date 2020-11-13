@@ -1,21 +1,21 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
+import { createDrawerNavigator } from '@react-navigation/drawer'
 import UserList from './src/views/UserList';
 import UserForm from './src/views/UserForm';
 import { Button, Icon } from 'react-native-elements';
 import { UsersProvider } from './src/context/UsersContext';
 
-const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
 export default props => {
   return (
     <UsersProvider>
       <NavigationContainer>
-          <Stack.Navigator
+          <Drawer.Navigator
             initialRouteName="UserList"
             screenOptions={screenOptions}>
-              <Stack.Screen 
+              <Drawer.Screen 
                 name="UserList" 
                 component={UserList}
                 options={({ navigation }) => {
@@ -31,14 +31,14 @@ export default props => {
                   }
                 }}
               />
-              <Stack.Screen
+              <Drawer.Screen
                 name="UserForm"
                 component={UserForm}
                 options={{
                   title: "Formulário de Usuários"
                 }}
               />
-          </Stack.Navigator>
+          </Drawer.Navigator>
       </NavigationContainer>
     </UsersProvider>
   )
