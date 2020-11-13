@@ -9,6 +9,8 @@ import { Button, Icon } from 'react-native-elements';
 import { UsersProvider } from './src/context/UsersContext';
 import PeopleDetailsPage from './src/pages/PeopleDetailsPage'
 import PeoplePage from './src/pages/PeoplePage'
+import PaginaPessoas from './src/pages/PaginaPessoas';
+import DetalhePessoas from './src/pages/DetalhePessoas';
 
 
 const Drawer = createDrawerNavigator();
@@ -24,6 +26,8 @@ export default props => {
 					    <Drawer.Screen name="Detalhe das pessoas alemãs"	component={PeopleDetailsPage}	/>
               <Drawer.Screen name="Heroes" component={Home} />
               <Drawer.Screen name="Description" component={Description} />
+              <Drawer.Screen name="Lista de Pessoas" component={PaginaPessoas} />
+              <Drawer.Screen name="Detalhe da Pessoa" component={DetalhePessoas} />
               <Drawer.Screen 
                 name="UserList" 
                 component={UserList}
