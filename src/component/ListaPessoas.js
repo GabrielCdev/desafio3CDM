@@ -2,10 +2,6 @@ import React from 'react'
 import {View, StyleSheet, SafeAreaView, FlatList, Text} from 'react-native'
 import ListaPessoasItem from './ListaPessoasItem'
 
-
-
-
-
 const ListaPessoas = props => {
     const {peoples, onPressItem} = props
 

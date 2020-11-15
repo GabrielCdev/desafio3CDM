@@ -10,6 +10,7 @@ export default class PeoplePage extends React.Component {
 			peoples: []
 		}
 	}
+
 	componentDidMount() {
 		axios
 			.get('http://demo0208493.mockable.io/GermanProfile')
@@ -20,6 +21,7 @@ export default class PeoplePage extends React.Component {
 				})
 			})
 	}
+	
 	render() {
 		return (
 			<View>

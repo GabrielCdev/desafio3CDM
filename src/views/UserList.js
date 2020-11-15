@@ -49,7 +49,6 @@ export default props => {
                 subtitle={user.email}
                 bottomDivider
                 rightElement={getActions(user)}
-                onPress={() => props.navigation.navigate('UserForm')}
             />
         )
     }

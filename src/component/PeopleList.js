@@ -13,6 +13,7 @@ const PeopleList = (props) => {
 			/>
 		)
 	}
+
 	const header = () => {
 		return (
 			<View style={style.headerStyle}>
@@ -20,6 +21,7 @@ const PeopleList = (props) => {
 			</View>
 		)
 	}
+
 	return (
 		<View style={style.container}>
 			<SafeAreaView>
@@ -33,6 +35,7 @@ const PeopleList = (props) => {
 		</View>
 	)
 }
+
 const style = StyleSheet.create({
 	container: {
 		backgroundColor: '#e67300'
@@ -52,4 +55,5 @@ const style = StyleSheet.create({
 		marginTop: 15
 	}
 })
+
 export default PeopleList

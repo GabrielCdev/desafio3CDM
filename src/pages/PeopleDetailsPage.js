@@ -35,6 +35,7 @@ export default class PeopleDetailsPage extends React.Component {
 		)
 	}
 }
+
 const style = StyleSheet.create({
 	scroll: {
 		flex: 1,

@@ -5,6 +5,7 @@ import {toUpperFirst} from '../util'
 const ListaPessoasItem = props => {
     const {people, onPressItemDetails} = props
     const {title, first, last} = people.name
+
     return(
         <TouchableOpacity onPress={() => {
             onPressItemDetails(people)
@@ -23,7 +24,6 @@ const ListaPessoasItem = props => {
             </View>
         </TouchableOpacity>
     )
-
 }
 
 const style = StyleSheet.create({
@@ -47,6 +47,7 @@ const style = StyleSheet.create({
         }
     }
 )
+
 export default ListaPessoasItem
 
 

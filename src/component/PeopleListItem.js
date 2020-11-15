@@ -20,6 +20,7 @@ const PeopleListItem = (props) => {
 		</TouchableOpacity>
 	)
 }
+
 const style = StyleSheet.create({
 	line: {
 		height: 60,

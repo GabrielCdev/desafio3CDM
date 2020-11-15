@@ -5,8 +5,6 @@ export default class DetalhePessoas extends React.Component{
 
     constructor(props){
         super(props)
-        
-        
     }
 
     render(){
@@ -25,6 +23,7 @@ export default class DetalhePessoas extends React.Component{
         )
     }
 }
+
 const style = StyleSheet.create({
     container: {
         backgroundColor: '#05E6BE'
@@ -54,5 +53,4 @@ const style = StyleSheet.create({
         paddingLeft:20,
         backgroundColor: '#05E6BE'    
     }
-}
-)
+})

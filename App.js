@@ -1,17 +1,18 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createDrawerNavigator } from '@react-navigation/drawer'
-import UserList from './src/views/UserList';
-import UserForm from './src/views/UserForm';
-import Home from './src/views/Marvel/Home';
-import Description from './src/views/Marvel/Description';
 import { Button, Icon } from 'react-native-elements';
 import { UsersProvider } from './src/context/UsersContext';
+
+// Telas
 import PeopleDetailsPage from './src/pages/PeopleDetailsPage'
 import PeoplePage from './src/pages/PeoplePage'
 import PaginaPessoas from './src/pages/PaginaPessoas';
 import DetalhePessoas from './src/pages/DetalhePessoas';
-
+import UserList from './src/views/UserList';
+import UserForm from './src/views/UserForm';
+import Home from './src/views/Marvel/Home';
+import Description from './src/views/Marvel/Description';
 
 const Drawer = createDrawerNavigator();
 
