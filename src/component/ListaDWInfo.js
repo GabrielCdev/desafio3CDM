@@ -1,12 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { ceil } from 'react-native-reanimated';
 import {toUpperFirst} from '../util'
  
+
 const ListaDWInfo = (props) => {
     const { people, onPressItemDetails} = props
     const { name } = people.nome
-    return (
+	
+	return (	
         <TouchableOpacity onPress={() => {
             onPressItemDetails(people)
         }}>
@@ -55,7 +57,7 @@ const style = StyleSheet.create({
 		bottom:'7%'
 	},
 	space:{
-	 backgroundColor: '#FFA62B',
+	 backgroundColor: '#fff8dc',
 	 height: 3,
 	 width: '100%'
 	}

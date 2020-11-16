@@ -89,7 +89,7 @@ const style = StyleSheet.create({
 		alignItems: 'center',
 		paddingBottom: '15%',
 		paddingLeft: '1%',
-		backgroundColor: '#0455EB',
+		backgroundColor: '#00b2ee',
 		width: '80%',
 		height: ScreenHeight
 	},

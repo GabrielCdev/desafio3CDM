@@ -1,6 +1,7 @@
 import React from 'react'
-import { View, StyleSheet, SafeAreaView, FlatList, Text } from 'react-native'
+import {View, StyleSheet, SafeAreaView, FlatList, Text } from 'react-native'
 import ListaDWInfo from './ListaDWInfo'
+
 
 const ListaDoctorWho = (props) => {
 	const { peoples, onPressItem } = props
@@ -13,7 +14,7 @@ const ListaDoctorWho = (props) => {
 			/>
 		)
 	}
-
+	
 	return (
 		<View style={style.container}>
 			<SafeAreaView>
@@ -29,17 +30,10 @@ const ListaDoctorWho = (props) => {
  
 const style = StyleSheet.create({
     container: {
-     backgroundColor: '#0455eb',
-     borderBottomColor: '#000000',
-	},
-	titleStyle: {
-		color: '#000',
-		fontSize: 25,
-		fontWeight: 'bold',
-		height: 50,
-		justifyContent: 'center',
-		alignItems: 'center',
-		marginTop: 15
+		width: '100%',
+		alignSelf: "center",
+        backgroundColor: '#0202B1',
+        borderBottomColor: '#000000',
 	}
 })
 export default ListaDoctorWho
