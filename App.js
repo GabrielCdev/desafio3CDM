@@ -13,6 +13,8 @@ import UserList from './src/views/UserList';
 import UserForm from './src/views/UserForm';
 import Home from './src/views/Marvel/Home';
 import Description from './src/views/Marvel/Description';
+import DetalhePersonas from './src/pages/DetalhesPersonas'
+import DetalhesPersonasPag from './src/pages/DetalhesPersonasPag'
 
 const Drawer = createDrawerNavigator();
 
@@ -29,6 +31,8 @@ export default props => {
               <Drawer.Screen name="Description" component={Description} />
               <Drawer.Screen name="Lista de Pessoas" component={PaginaPessoas} />
               <Drawer.Screen name="Detalhe da Pessoa" component={DetalhePessoas} />
+              <Drawer.Screen name="Lista personagens Doctor Who"	component={DetalhePersonas}/>
+					    <Drawer.Screen name="Detalhes do personagem"	component={DetalhesPersonasPag}	/>
               <Drawer.Screen 
                 name="UserList" 
                 component={UserList}
