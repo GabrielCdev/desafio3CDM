@@ -16,6 +16,7 @@ const ListaDWInfo = (props) => {
                 {`${toUpperFirst(name)}`}
             </Text>            
          </View>
+		 <View style={style.space}></View>
         </TouchableOpacity>
     )
 }
@@ -24,13 +25,13 @@ const style = StyleSheet.create({
 	line: {
 		height: 160,
 		width: '100%',
-		borderBottomWidth: 6,
-		borderTopWidth: 10,
-		borderRightWidth: 6,
+		borderBottomWidth: 4,
+		borderTopWidth: 12,
+		borderRightWidth: 7,
 		borderLeftWidth: 4,
 		borderLeftColor: '#000000',
 		borderRightColor: '#000000',
-		borderTopColor: '#0202B1',
+		borderTopColor: '#060855',
 		borderBottomColor: '#000000',
 		flexDirection: 'column',
 		alignItems: 'center'
@@ -49,8 +50,14 @@ const style = StyleSheet.create({
 	linetext: {
 		fontWeight: "bold",
 		position:'absolute',
+		color: '#000000',
 		left:'47%',
 		bottom:'7%'
+	},
+	space:{
+	 backgroundColor: '#FFA62B',
+	 height: 3,
+	 width: '100%'
 	}
 }
 )

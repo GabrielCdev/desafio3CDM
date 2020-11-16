@@ -14,9 +14,12 @@ export default class DetalhesPersonasPag extends React.Component {
 		// console.log(peoples.imagem)
 		return (
 			<ScrollView style={style.scroll}>
-				<SafeAreaView>
-					<View style={style.container}>
+			  <SafeAreaView>
+				<View style={style.coluna} >
+					<View style={style.image}>
 				     	<Image style={style.picture} source={{uri:peoples.imagem}}/>
+					</View>
+					<View style={style.container}>
 						<Text style={style.title}>Nome:</Text>
 						<Text style={style.text}>{peoples.nome.name}</Text>
 						<Text style={style.title}>Origem:</Text>
@@ -26,9 +29,10 @@ export default class DetalhesPersonasPag extends React.Component {
 						<Text style={style.title}>Idade:</Text>
 						<Text style={style.text}>{peoples.idade}</Text>
                         <Text style={style.title}>Profissão:</Text>
-						<Text style={style.text}>{peoples.profissao}</Text>
+						<Text style={style.text}>{peoples.profissao}</Text>	
 					</View>
-				</SafeAreaView>
+				 </View>  	
+			  </SafeAreaView>
 			</ScrollView>
 		)
 	}
@@ -74,11 +78,22 @@ const style = StyleSheet.create({
 		marginBottom: 10,
 		marginTop: 10
 	},
+	coluna:{
+	   flexDirection: 'row',
+	},
+
 	container: {
 		justifyContent: 'center',
 		alignItems: 'center',
-		backgroundColor: '#f2f2f2',
-		flex: 1,
+		paddingBottom: '15%',
+		paddingLeft: '1%',
+		backgroundColor: '#0455EB',
+		width: '80%',
 		height: ScreenHeight
+	},
+
+	image: {
+	  backgroundColor: '#FFA62B',
+	  width: 300
 	}
 })
