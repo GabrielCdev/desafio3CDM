@@ -18,6 +18,7 @@ export default class DetalhesPersonasPag extends React.Component {
 				<View style={style.coluna} >
 					<View style={style.image}>
 				     	<Image style={style.picture} source={{uri:peoples.imagem}}/>
+						<Text style={style.description}>"{peoples.descricao}"</Text>
 					</View>
 					<View style={style.container}>
 						<Text style={style.title}>Nome:</Text>
@@ -61,6 +62,7 @@ const style = StyleSheet.create({
 
 	picture: {
 		aspectRatio: 1,
+		left: '15%',
 		margin: 40,
 		height: 200,
 		width: 200,
@@ -94,6 +96,16 @@ const style = StyleSheet.create({
 
 	image: {
 	  backgroundColor: '#FFA62B',
-	  width: 300
+	  width: 400
+	},
+
+	description:{
+		fontSize: 17,
+		textAlign: 'center',
+		margin: 40,
+		display: 'flex',
+		flexWrap: 'wrap',
+		justifyContent: 'center'
 	}
+
 })
